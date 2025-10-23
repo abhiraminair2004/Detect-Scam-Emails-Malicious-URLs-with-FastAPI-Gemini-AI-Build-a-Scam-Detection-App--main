@@ -28,7 +28,7 @@ limiter = Limiter(
 )
 
 # Set up the Google API Key
-os.environ["GOOGLE_API_KEY"] = os.environ.get("GOOGLE_API_KEY", "your_api_key_here")
+os.environ["GOOGLE_API_KEY"] = os.environ.get("GOOGLE_API_KEY", "AIzaSyDtHSTEsPb1P9TbPLs4bpX850gH-lgQyVU")
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 # Initialize the Gemini model
