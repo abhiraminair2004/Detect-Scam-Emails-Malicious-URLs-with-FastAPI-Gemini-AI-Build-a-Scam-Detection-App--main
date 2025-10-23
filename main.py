@@ -36,7 +36,7 @@ limiter = Limiter(
 celery = Celery('threatguard', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')
 
 # Set up the Google API Key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCopzXnOvWbI15u0MS4bJ15YDx8xouT4jg"
+os.environ["GOOGLE_API_KEY"] = os.environ.get("GOOGLE_API_KEY", "your_api_key_here")
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 # Initialize the Gemini model
